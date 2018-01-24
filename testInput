@@ -1,0 +1,15 @@
+18/1
+4000 correctly formatted food
+badly formatted, this line is skipped 400
+400
+^The above has no food line
+
+19/1
+30 a
+40 b
+50 c
+60
+70
+
+20/1
+300

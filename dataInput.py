@@ -43,6 +43,7 @@ for file in files:
     items = []
     firstDateIterated = 0 #has the first date been iterated
 
+    print("Skipped lines in file: {}".format(file))
     for line in f:
         string = line.strip().split(" ",1)
         date = processDate(string)
@@ -58,7 +59,8 @@ for file in files:
         elif is_number(string[0]):
             sum += int(string[0])
             items.append(' '.join(string[1:]))
-
+        elif(string[0]):
+            print(string)
     items = ','.join(item for item in items if item)
     spreadsheet.writerow([sum, items]) #Writes the final line
 
